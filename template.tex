@@ -242,22 +242,9 @@ The results shows that the model has an overall acceptable performance.  At an h
 
 \subsection{Stormflow partitioning at 4 specific cases } \label{sec:4Cases}
 
-We first analyze 4 events in detail in order to assess how variations at rainfall and soil moisture condition the streamflow partitioning. The four events were selected by their variations on the total percentage of surface and subsurface runoff.  According to this, there are two well mixed events, one surface dominated event and a subsurface dominated one (Figure \ref{fig:four_events}). For the analysis, we took into account the hietogram evolution, rainfall spatial accumulation, pre-event water, and radar profiles at different time steps.\\
+We first analyze 4 events in detail in order to assess how variations at rainfall and soil moisture condition the streamflow partitioning. The four events were selected by their variations on the total percentage of surface and subsurface runoff.  According to this, there are two well mixed events, one surface dominated event and a subsurface dominated one (Figure \ref{fig:four_events}). For the analysis, we took into account the hietogram evolution, rainfall spatial accumulation, spatial rainfall accumulation (Figure \ref{fig:rainfall_acum}), and radar profiles at different time steps (Figure \ref{fig:radar_profiles}).  \\
 
-In addition to the volume partitioning, there are several differences between the four selected events (Figure \ref{fig:four_events}).  At events E5 and E100 there is a maximum rainfall accumulation of 0.8 and 0.85 $mm$ in 5min (9.6 and 10.2 $mm/h$ respectively), in events E120 and E186, this accumulation descends to 0.45 and 0.2 respectively.   Also, there are differences regarding the temporal distribution of the rainfall.  At events E5 and E100 the major accumulation happens in a time lapse of 1 hour,  on the other hand, for events E120 and E186, the corresponding major accumulation happens in a lapse of  3 hours respectively.\\
-
-Described differences in the rainfall influence $Q_{obs}$, $Q_{run}$ and $Q_{sub}$.  In the four cases, peak streamflow and flow partitioning vary in function of the hietogram.  The value of $Q_{run}$ increases with the mean maximum intensity as shown on E123 (Figure \ref{fig:four_events}c), and $Q_{sub}$ increases with low-intensity and long-duration rainfall events as shown on event E186 (Figure \ref{fig:four_events}).  It is also important to notice how at events E100 and E120, $Q_{run}$ is related to the peaks of $Q_{sim}$, and tends to oscillate before $Q_{sub}$, which usually explains the recession. \\
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=14cm]{Figuras/Cuatro_eventos.png}
-    \caption{Selected stormflow events, in each event we present the observed streamflow (black), total simulated streamflow (red), simulated surface runoff (green) and simulated subsurface runoff (blue), also we show rainfall depth in an inverted second y-axis. E100 and E120 are well mixed events between surface and subsurface. E123 is a surface runoff dominated event, and E186 is a subsurface dominated event.}
-    \label{fig:four_events}
-\end{figure}
-
-The accumulation of the rainfall fields during the events also plays a relevant role on the partitioning dynamics (Figure \ref{fig:rainfall_acum}).  With high intensities and an increase value of $Q_{run}$, events E120 and E123 exhibit high rainfall accumulation in a limited spatial domain (Figures \ref{fig:rainfall_acum}b and c respectively).  At this two cases, the high accumulation of rainfall is linked to intense convective cores that increase $Q_{run}$ without necessarily changing $I_{max}$ (see Figure \ref{fig:four_events}b for an example).\\
-
-Conversely, the rainfall field accumulation is almost homogeneous at the subsurface dominated event E186 (Figure \ref{fig:rainfall_acum}d).   Finally, event E100 has a mix between regions with homogeneous low rainfall accumulation and sparse regions with medium to high accumulations (Figure \ref{fig:rainfall_acum}a) which correspond to two peaks at the hietogram and temporal oscillations at $Q_{run}$ and $Q_{sub}$ (Figure \ref{fig:four_events}a).\\
+The spatial rainfall accumulation at the end of each event is different among the four events. Here we have two events with more homogeneous rainfall accumulation fields, and two events with more presence of convective storm cells. At events E100 and E186 (Figures \ref{fig:rainfall_acum}a and d respectively) rainfall fields are more homogeneous, with some medium to high accumulations at E100. Event E120 (Figure \ref{fig:rainfall_acum}b) shows one convective system of high rainfall accumulation at the middle of the watershed.  And E123 (Figure \ref{fig:rainfall_acum}c) shows different regions with important rainfall accumulations (convective cores).  Both, events E120 and E123 have high rainfall accumulations over the urban area of the watershed.\\
 
 \begin{figure}[!h]
     \centering
@@ -265,8 +252,28 @@ Conversely, the rainfall field accumulation is almost homogeneous at the subsurf
     \caption{Total accumulated rainfall at the end of the event.  From panels a to d we show respectively events E100, E120, E123 and E186.}
     \label{fig:rainfall_acum}
 \end{figure}
+Complementary to the rainfall accumulation, at Figure \ref{fig:radar_profiles} we present the evolution of the storms observed as radar vertical profiles. In this evolution we can see more differences among the events.  According to it, E100 is an event of stratiform nature, with well defined layers and low rainfall accumulation.  On the other hand, E120 and E123 exhibit well defined convective formations.  In the case of E120 the convective cell appears at the beginning of the event, and eventually evolves as a stratiform storm.  On E123 the convective cell covers more area of the watershed, and has an important vertical development.  The evolution of the four rainfall events is also shown on the hietograms presented at Figure \ref{fig:four_events}.  
 
-FALTAN PERFILES DE RADAR PARA DESCRIBIR UN POCO MAS Y REMATAR ESTE TEMA ACA 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]{Figuras/Perfiles_Radar.png}
+    \caption{Radar profiles of events E100, E120 and E123. Columns correspond to 
+    different time steps of each event, the shaded area is outside of the watershed, the vertical profile is completely oriented from east to west.}
+    \label{fig:radar_profiles}
+\end{figure}
+
+Described differences in the rainfall influence $Q_{obs}$, $Q_{run}$ and $Q_{sub}$.  In the four cases, peak streamflow and flow partitioning vary in function of the hietogram.  The value of $Q_{run}$ increases with the mean maximum intensity as shown on E123 (Figure \ref{fig:four_events}c), and $Q_{sub}$ increases with low-intensity and long-duration rainfall events as shown on events E100 and E186 (Figures \ref{fig:four_events}a and d respectively).  It is also important to notice how at events E100 and E120, $Q_{run}$ is related to the peaks of $Q_{sim}$, and tends to oscillate before $Q_{sub}$, which usually explains the recession. \\
+
+In
+
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=14cm]{Figuras/Cuatro_eventos.png}
+    \caption{Selected stormflow events, in each event we present the observed streamflow (black), total simulated streamflow (red), simulated surface runoff (green) and simulated subsurface runoff (blue), also we show rainfall depth in an inverted second y-axis. E100 and E120 are well mixed events between surface and subsurface. E123 is a surface runoff dominated event, and E186 is a subsurface dominated event.}
+    \label{fig:four_events}
+\end{figure}
 
 \subsection{Stormflow partitioning in function of rainfall and pre-event conditions.}
 
